@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format(truetype);
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--stone-100);
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: var(--stone-600);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    min-height: 100svh;
+}
+
+img {
+    border-radius: 25px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+hr {
+    color: var(--stone-100);
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid var(--stone-150);
+}
+
+h1, h2 {
+    font-family: 'YoungSerif';
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--stone-900);
+}
+
+h4 {
+    color: var(--rose-800);
+}
+
+main > h2 {
+    color: var(--brown-800);
+}
+
+td > strong {
+    color: var(--brown-800);
+}
+
+ol > li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+li {
+    padding-left: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+    border: none;
+    padding: .5rem 0;
+}
+
+tr:last-child {
+  border: none;
+}
+
+.container {
+    border-radius: 15px;
+    padding: 2.5rem;
+    max-width: 720px;
+    background-color: var(--white);
+}
+
+.preparation-time {
+    padding: 1rem 0 1rem 2rem;
+    background-color: var(--rose-50);
+    border-radius: 15px;
+}
+
+.preparation-time li::marker {
+    color: var(--rose-800);
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0;
+        max-width: 100vw;
+    }
+
+    header h1, p {
+        padding: 0 2.5rem;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+
+    img {
+        border-radius: 0px;
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+}
