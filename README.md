@@ -20,12 +20,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![recipe-page](./recipe-page.png)
+![screenshot of my recipe page](.recipe-page.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Elvys-c/recipe-page](https://github.com/Elvys-c/recipe-page)
+- Live Site URL: [https://elvys-c.github.io/recipe-page/](https://elvys-c.github.io/recipe-page)
 
 ## My process
 
@@ -41,7 +41,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 I learned about how media queries work and how each part of the page behaves according to the screen size.
 
 ```css
-@media (max-width: 375px) {}
+@media (max-width: 375px) { ... }
 ```
 
 ### Continued development
